@@ -1,0 +1,112 @@
+// PHOTO GALLERY
+
+#photo-gallery {
+  background: lighten($primary-color, 45%);
+  margin-top: -40px;
+  margin-bottom: -40px;
+}
+
+// #photo-gallery h2 {
+//   margin-bottom: 20px;
+// }
+
+.img-thumbnail {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.gallery-block {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.gallery-block .heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.gallery-block .heading h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.gallery-block.compact-gallery .item {
+  overflow: hidden;
+  margin-bottom: 0;
+  opacity: 1;
+}
+
+.gallery-block.compact-gallery .item .image {
+  transition: 0.8s ease;
+}
+
+.gallery-block.compact-gallery .item .info {
+  position: relative;
+  display: inline-block;
+}
+
+.gallery-block.compact-gallery .item .description {
+  display: grid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  font-size: 17px;
+  line-height: 18px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  opacity: 1;
+  color: #fff;
+  transition: 0.8s ease;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+}
+
+.gallery-block.compact-gallery .item .description .description-heading {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.gallery-block.compact-gallery .item .description .description-body {
+  font-size: 0.8em;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.gallery-block.compact-gallery .item .description {
+  opacity: 0; 
+}
+
+.gallery-block.compact-gallery .item a:hover .description {
+  opacity: 1; 
+} 
+
+.gallery-block .zoom-on-hover:hover .image {
+  transform: scale(1.5);
+  opacity: 0.7; 
+}
+
+.lead {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.photo-gallery .lead a,
+.fa .fas {
+  text-decoration: none;
+  color: $primary-color;
+  transition: color .5s ease-in-out;
+}
+
+.photo-gallery .lead a:hover {
+  color: lighten($primary-color, 30%);
+}
+
+.fa-camera:before{
+  color: $primary-color;
+  margin-right: 5px;
+}

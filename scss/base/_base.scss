@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include body;
+}
+
+.vr-hr {
+  border-right: none;
+  border-bottom: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  @include section-headings;
+}
+
+a:link,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+  list-style: none;
+  color: lighten($primary-color, 20%);
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  @include sections;
+}
+
+.no-pad-mar {
+  @include no-padding-no-margin;
+}
+
+@media (min-width: 768px) {
+  
+  .vr-hr {
+    border-right: 1px solid $primary-color;
+    border-bottom: 1px solid $primary-color;
+  }
+}

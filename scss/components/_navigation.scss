@@ -1,0 +1,34 @@
+// NAVIGATION
+
+/* ===================================
+            NAVIGATION
+====================================== */
+
+.bg-nav-color {
+  background-color: $primary-color;
+}
+
+.rsvp-top {
+  background-color: lighten($primary-color, 50%);
+  color: $primary-color !important;
+  border-radius: 3px;
+  font-weight: bold;
+  padding-left: 10px !important;
+  transition: .25s ease-in-out;
+  &:hover {
+    background-color: lighten($primary-color, 70%);
+  }
+}
+
+.nav-link:hover {
+  transition: color .25s ease-in-out;
+}
+
+
+@media (min-width: 768px) {
+  
+  .rsvp-top {
+    padding-left: 0;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,29 @@
+// WEDDING HASHTAG
+
+.wedding-hashtag {
+  @include sections;
+  background: url('/images/hashtag-pic.jpg') no-repeat center $primary-color;
+  background-size: cover;
+  // background-attachment: fixed;
+  height: 700px;
+}
+
+.wedding-hashtag h2 {
+  @include section-headings;
+}
+
+.wedding-hashtag p {
+  color: lighten($primary-color, 40%);
+  font-size: 2em;
+}
+
+@media (min-width: 768px) {
+
+  .wedding-hashtag {
+    background-attachment: fixed;
+  }
+
+  .wedding-hashtag p {
+    font-size: 4em;
+  }
+}

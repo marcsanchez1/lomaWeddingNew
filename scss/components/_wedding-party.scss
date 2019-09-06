@@ -1,0 +1,56 @@
+// WEDDING PARTY
+
+.wedding-party {
+  @include sections;
+  background-color: lighten($primary-color, 50%);
+  margin: auto;
+  text-align: center;
+}
+
+.wedding-party-name {
+  @include wedding-party-name;
+}
+
+.wedding-party-role {
+  @include wedding-party-role;
+}
+
+.wedding-party-bio {
+  @include wedding-party-bio;
+}
+
+.wedding-party h2 {
+  @include section-headings;
+}
+
+.wedding-party img {
+  margin: 40px 0;
+  width: 30%;
+}
+
+
+@media (min-width: 786px) {
+
+  // VERTICAL BORDER TOP
+  .vr-upper-left { /* Karina */
+    border-right: 2px solid;
+    border-image: linear-gradient(to top, transparent 5%, #853453, transparent 90%) 1;
+  }
+
+  .vr-lower-right { /* Wyat */
+    border-left: 2px solid;
+    border-image: linear-gradient(to top, transparent 5%, #853453, transparent 90%) 1;
+  }
+
+  // HORIZONTAL BORDER BOTTOM
+  .hr-upper-right { /* Marc */
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to left, transparent 5%, #853453, transparent 90%) 40;
+  }
+  
+  .hr-lower-left { /* Alyssa */
+    border-top: 2px solid;
+    border-image: linear-gradient(to left, transparent 5%, #853453, transparent 90%) 1;
+  }
+}
+

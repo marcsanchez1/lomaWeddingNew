@@ -1,0 +1,28 @@
+// WEDDING PARTY
+
+.our-story {
+  @include sections;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #fff;
+  line-height: 1.6;
+  margin: auto;
+}
+
+.our-story h2 {
+  @include section-headings;
+}
+
+.our-story p {
+  text-align: justify;
+}
+
+button.read-more {
+  @include read-more-btn;
+}
+
+button.read-more:hover {
+  background: lighten($primary-color, 15%);
+}
+

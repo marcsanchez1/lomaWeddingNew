@@ -1,0 +1,87 @@
+// WEDDINGS EVENTS
+
+.hero-wedding-day {
+  background: url('../../images/wedding-day/wedding-day-hero@2x.png') no-repeat center;
+  @include hero-img;
+}
+
+section.wedding-sections{
+  max-width: 1140px;
+  margin: auto;
+}
+
+section h2 {
+  margin: 0 auto;
+}
+
+.section-info {
+  @include section-info;
+}
+
+.weekend-itinerary {
+  width: 100%;
+  max-width: 1140px;
+}
+
+.event-section {
+  margin: 60px 0;
+}
+
+.event-content {
+  margin-top: 10px;
+}
+
+.itinerary-content-title {
+  color: lighten($body-text-color, 30%);
+}
+
+.itinerary-content-date {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: $primary-color;
+  margin: 20px 0;
+}
+
+a.hotel-zamora {
+  @include section-info;
+  color: lighten($body-text-color, 50%) !important;
+  font-size: 1.25em;
+}
+
+.clearfix {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+@media (min-width: 769px) {
+
+  .itinerary-header {
+    margin-bottom: 60px;
+  }
+
+  .event-section {
+    margin: 0;
+  }
+
+  .event-image,
+  .event-content {
+    width: 50%;
+  }
+
+  .event-content {
+    margin-top: 50px;
+    max-height: 49vh;
+    overflow: scroll;
+  }
+
+  .set-right {
+    float: right;
+  }
+
+  .set-left {
+    float: left;
+  }
+}
+
+@me

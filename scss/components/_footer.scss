@@ -1,0 +1,80 @@
+// FOOTER 
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 60px 0;
+  background: lighten($primary-color, 40%);
+  text-align: center;
+}
+
+footer h3 {
+  @include script-font;
+  font-size: 3.5em;
+  color: $white;
+  text-align: center;
+}
+
+footer h4 {
+  font-size: 1.5em;
+  color: $white;
+  text-align: center;
+  margin-top: -10px;
+}
+
+footer a {
+  color: $primary-color;
+  cursor: pointer;
+  transition: color .25s ease-in-out;
+  margin-top: 20px;
+}
+
+footer a:active,
+footer a:hover {
+  color: lighten($primary-color, 50%);
+}
+
+footer .nav {
+  display: none;
+}
+
+.back-to-top {
+  display: block;
+  font-size: 1.25em;
+  margin-top: 30px;
+}
+
+.copyright {
+  width: 100%;
+  background: $primary-color;
+  color: $white;
+  text-align: center;
+  padding: 10px;
+}
+
+.copyright p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+
+  footer .nav {
+    display: flex;
+  }
+
+  .rsvp-footer {
+    background-color: $primary-color;
+    color: $white !important;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: .25s ease-in-out;
+    &:hover {
+      background-color: lighten($primary-color, 20%);
+    }
+  }
+  .back-to-top {
+    display: none;
+  }
+}

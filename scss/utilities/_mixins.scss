@@ -1,0 +1,80 @@
+// MIXINS
+
+@mixin body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  color: $body-text-color;
+}
+
+@mixin script-font {
+  font-family: "al-fresco", sans-serif;
+}
+
+@mixin sections {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+@mixin section-headings {
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 40px;
+  color: $primary-color;
+}
+
+@mixin section-info {
+  color: lighten($body-text-color, 20%);
+  padding: 0 20px;
+  margin: 0 auto 0;
+  width: 85%;
+}
+
+@mixin no-padding-no-margin {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin read-more-btn {
+  font-size: .675rem;
+  color: $white;
+  background: $primary-color;
+  border: 2px solid $primary-color;
+  transition: background .25s ease-in-out;
+  border-radius: 5px;
+  padding: 5px 5px 6px;
+  margin: 0;
+}
+
+@mixin wedding-party-name {
+  font-size: 2em;
+}
+
+@mixin wedding-party-role {
+  font-size: 1.75em;
+  color: $primary-color;
+}
+
+@mixin wedding-party-bio {
+  font-size: 1.1875em;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+@mixin hero-img {
+  background-size: cover;
+  height: 550px;
+  text-align: center;
+  color: $white;
+}

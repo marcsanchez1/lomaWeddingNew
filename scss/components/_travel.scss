@@ -1,0 +1,79 @@
+// TRAVEL PAGE
+
+.hero-travel {
+  background: url('../../images/hero/travel-hero.jpg') no-repeat center;
+  @include hero-img;
+}
+
+.travel-sections {
+  max-width: 1140px;
+}
+
+.travel-sections h2 {
+  margin: 0 auto;
+}
+
+.section-info {
+  @include section-info;
+}
+
+.airports {
+  margin-top: 40px;
+  transition: color .25s ease-in-out;
+  & a {
+    font-size: .875em;
+    &:hover {
+      color: lighten($primary-color, 30%);
+    }
+  }
+}
+
+p.annotation {
+  font-size: .875em;
+  margin-top: -5px;
+  color: lighten($primary-color, 40%);
+}
+
+.card-title a {
+  font-size: 1.25rem;
+  color: $body-text-color !important;
+  transition: .25s ease-in-out;
+  &:hover {
+    color: $primary-color !important;
+    font-weight: bold;
+  }
+}
+
+.card-text {
+  display: block;
+  color: lighten($body-text-color, 30%);
+  padding-top: 20px;
+  & a {
+    font-size: 1em;
+  }
+}
+
+.travel-sections .card {
+  margin-bottom: 40px;
+}
+
+.address,
+.tel {
+  display: block;
+  color: lighten($primary-color, 40%);
+  padding: 5px;
+}
+
+.address {
+  margin-top: -15px;
+}
+
+@media (min-width: 768px) {
+  .travel-sections .card {
+    margin-bottom: 0;
+  }
+
+  .doncesar {
+    margin-top: 32px;
+  }
+}

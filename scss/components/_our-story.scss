@@ -1,4 +1,4 @@
-// WEDDING PARTY
+// OUR STORY
 
 .our-story {
   @include sections;
@@ -23,6 +23,7 @@ button.read-more {
 }
 
 button.read-more:hover {
-  background: lighten($primary-color, 15%);
+  background: lighten($primary-color, 50%);
+  color: $primary-color;
 }
 

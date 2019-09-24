@@ -1,6 +1,10 @@
 /* ===================================
             NAVIGATION
 ====================================== */
+nav {
+  z-index: 999 !important;
+}
+
 .bg-nav-color {
   background-color: #853453;
 }
@@ -15,6 +19,7 @@
 }
 .rsvp-top:hover {
   background-color: white;
+  box-shadow: inset 0 0 4px #444;
 }
 
 .nav-link:hover {
@@ -22,9 +27,31 @@
 }
 
 @media (min-width: 768px) {
+  .is-sticky .bg-nav-color {
+    background-color: #853453;
+    box-shadow: 0 0 4px #000;
+    transition: 1s ease-in-out;
+  }
+
+  .nav-link,
+.navbar-brand {
+    color: #ebcdd8 !important;
+    transition: color 0.25s ease-in-out;
+  }
+  .nav-link:hover,
+.navbar-brand:hover {
+    color: #cf83a0 !important;
+  }
+
   .rsvp-top {
+    color: #853453 !important;
     padding-left: 0;
     margin-left: 10px;
+    transition: 0.25s ease-in-out;
+  }
+
+  .is-sticky .rsvp-top {
+    color: #853453 !important;
   }
 }
 /* ===================================
@@ -116,18 +143,19 @@
 }
 
 button.read-more {
-  font-size: 0.675rem;
+  font-size: 16px;
   color: #FFFFFF;
   background: #853453;
   border: 2px solid #853453;
   transition: background 0.25s ease-in-out;
   border-radius: 5px;
-  padding: 5px 5px 6px;
-  margin: 0;
+  padding: 5px 15px 6px;
+  margin-top: 10px;
 }
 
 button.read-more:hover {
-  background: #b94c76;
+  background: #ebcdd8;
+  color: #853453;
 }
 
 .wedding-party {
@@ -170,8 +198,15 @@ button.read-more:hover {
 }
 
 .wedding-party img {
-  margin: 40px 0;
-  width: 30%;
+  width: 100%;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-body p {
+  margin-top: -20px;
 }
 
 @media (min-width: 786px) {
@@ -197,6 +232,10 @@ button.read-more:hover {
     /* Alyssa */
     border-top: 2px solid;
     border-image: linear-gradient(to left, transparent 5%, #853453, transparent 90%) 1;
+  }
+
+  .card {
+    margin-bottom: 0;
   }
 }
 .wedding-hashtag {
@@ -260,8 +299,8 @@ footer h4 {
   margin-top: -10px;
 }
 
-footer a {
-  color: #853453;
+footer .nav-link {
+  color: #853453 !important;
   cursor: pointer;
   transition: color 0.25s ease-in-out;
   margin-top: 20px;
@@ -583,8 +622,6 @@ a.hotel-zamora {
 
   .event-content {
     margin-top: 50px;
-    max-height: 49vh;
-    overflow: scroll;
   }
 
   .set-right {
@@ -596,6 +633,22 @@ a.hotel-zamora {
   }
 }
 @me;
+#gift-registry {
+  padding: 140px 0;
+}
+
+.crate-barrel {
+  display: block;
+  width: 35%;
+  transition: all 0.25s ease-in-out;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.crate-barrel:hover {
+  transform: scale(1.1);
+}
+
 * {
   box-sizing: border-box;
 }

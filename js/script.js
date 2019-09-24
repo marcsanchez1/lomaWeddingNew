@@ -2,6 +2,11 @@
 const readMoreButton = document.querySelector('button.read-more');
 const readMoreText = document.querySelector('.read-more-text');
 
+// Sticky navigation
+  $(".bg-nav-color").sticky({
+    topSpacing:0
+  });
+
 $('.read-more-text').hide();
 
 readMoreButton.addEventListener('click', () => {
@@ -15,17 +20,17 @@ readMoreButton.addEventListener('click', () => {
 });
 
 // This is for the RSVP
-function addMessage() {
-  var msg = 'Welcome to';
-  var el = document.getElementById('message');
-  el.textContent = msg;
-}
+// function addMessage() {
+//   var msg = 'Welcome to';
+//   var el = document.getElementById('message');
+//   el.textContent = msg;
+// }
 
-addMessage();
+// addMessage();
 
-function callMessage() {
-  el.textContent = newMessage;
-  return addMessage();
-}
+// function callMessage() {
+//   el.textContent = newMessage;
+//   return addMessage();
+// }
 
 $(".footer_powered_image").hide();

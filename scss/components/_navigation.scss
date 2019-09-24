@@ -4,6 +4,11 @@
             NAVIGATION
 ====================================== */
 
+nav {
+
+  z-index: 999 !important;
+}
+
 .bg-nav-color {
   background-color: $primary-color;
 }
@@ -17,6 +22,8 @@
   transition: .25s ease-in-out;
   &:hover {
     background-color: lighten($primary-color, 70%);
+    box-shadow: inset 0 0 4px $body-text-color;
+
   }
 }
 
@@ -26,9 +33,30 @@
 
 
 @media (min-width: 768px) {
+
+  .is-sticky .bg-nav-color {
+    background-color: $primary-color;
+    box-shadow: 0 0 4px #000;
+    transition: 1s ease-in-out;
+  }
+  
+  .nav-link,
+  .navbar-brand {
+    color: lighten($primary-color, 50%) !important;
+    transition: color .25s ease-in-out;
+    &:hover {
+      color: lighten($primary-color, 30%) !important;
+    }
+  }
   
   .rsvp-top {
+    color: $primary-color !important;
     padding-left: 0;
     margin-left: 10px;
+    transition: .25s ease-in-out;
+  }
+
+  .is-sticky .rsvp-top {
+    color: $primary-color !important;
   }
 }

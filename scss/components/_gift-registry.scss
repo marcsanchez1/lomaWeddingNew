@@ -1,0 +1,17 @@
+// GIFT REGISTRY
+
+#gift-registry {
+  padding: 140px 0;
+}
+
+.crate-barrel {
+  display: block;
+  width: 35%;
+  transition: all .25s ease-in-out;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.crate-barrel:hover {
+  transform: scale(1.1);
+}

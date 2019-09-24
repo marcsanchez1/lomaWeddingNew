@@ -24,8 +24,8 @@ footer h4 {
   margin-top: -10px;
 }
 
-footer a {
-  color: $primary-color;
+footer .nav-link {
+  color: $primary-color !important;
   cursor: pointer;
   transition: color .25s ease-in-out;
   margin-top: 20px;

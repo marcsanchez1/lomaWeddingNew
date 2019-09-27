@@ -17,7 +17,7 @@
   @include section-info;
 }
 
-.airports {
+.sections {
   margin-top: 40px;
   transition: color .25s ease-in-out;
   & a {
@@ -46,7 +46,7 @@ p.annotation {
 
 .card-text {
   display: block;
-  color: lighten($body-text-color, 30%);
+  color: $body-text-color;
   padding-top: 20px;
   & a {
     font-size: 1em;
@@ -55,6 +55,11 @@ p.annotation {
 
 .travel-sections .card {
   margin-bottom: 40px;
+}
+
+.travel-sections {
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .address,
@@ -68,9 +73,30 @@ p.annotation {
   margin-top: -15px;
 }
 
+.reserve-now-btn {
+  background: none;
+  border: 1px solid $primary-color;
+  border-radius: 5px;
+  color: $primary-color;
+  padding: 5px;
+  width: 100%;
+  transition: .25s ease-in-out;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  &:hover {
+    background: lighten($primary-color, 60%);
+  }
+}
+
 @media (min-width: 768px) {
   .travel-sections .card {
     margin-bottom: 0;
+  }
+
+  .travel-sections {
+    // padding-bottom: 40px;
+    padding-top: 40px;
   }
 
   .doncesar {

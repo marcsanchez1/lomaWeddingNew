@@ -458,7 +458,7 @@ p.annotation {
     padding-top: 40px;
   }
 
-  .doncesar {
+  .mt-32px {
     margin-top: 32px;
   }
 }
@@ -660,18 +660,18 @@ a.hotel-zamora {
 }
 @me;
 #gift-registry {
-  padding: 140px 0;
+  padding: 40px 0;
 }
 
-.crate-barrel {
-  display: block;
+.registry-logos {
+  display: flex;
+  align-content: center;
   width: 35%;
   transition: all 0.25s ease-in-out;
-  margin: 0 auto;
+  margin: 25px auto;
   text-align: center;
 }
-
-.crate-barrel:hover {
+.registry-logos:hover {
   transform: scale(1.1);
 }
 

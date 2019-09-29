@@ -9,6 +9,10 @@
   max-width: 1140px;
 }
 
+.travel-heading {
+  margin-top: 40px;
+}
+
 .travel-sections h2 {
   margin: 0 auto;
 }
@@ -100,5 +104,9 @@ p.annotation {
 
   .mt-32px {
     margin-top: 32px;
+  }
+
+  .travel-heading {
+    margin-top: 0;
   }
 }

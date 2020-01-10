@@ -90,6 +90,15 @@ nav {
   margin-top: -20px;
 }
 
+#countdown {
+  margin: 293px auto 0;
+  font-size: 2em;
+  color: #853453;
+  background-color: #ebcdd8;
+  width: 80%;
+  border-radius: 8px 8px 0 0;
+}
+
 @media (min-width: 768px) {
   .hero {
     height: 950px;
@@ -110,6 +119,12 @@ nav {
 
   .hero-location {
     font-size: 1.75em;
+  }
+
+  #countdown {
+    margin-top: 492px;
+    font-size: 3em;
+    width: 50%;
   }
 }
 .our-story {

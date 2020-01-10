@@ -37,6 +37,15 @@
   margin-top: -20px;
 }
 
+#countdown {
+  margin: 293px auto 0;
+  font-size: 2em;
+  color: $primary-color;
+  background-color: lighten($primary-color, 50%);
+  width: 80%;
+  border-radius: 8px 8px 0 0;
+}
+
 @media (min-width: 768px) {
 
   .hero {
@@ -58,5 +67,11 @@
 
   .hero-location {
     font-size: 1.75em;
+  }
+
+  #countdown {
+    margin-top: 492px;
+    font-size: 3em;
+    width: 50%;
   }
 }

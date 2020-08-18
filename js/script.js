@@ -12,10 +12,12 @@ $('.read-more-text').hide();
 readMoreButton.addEventListener('click', () => {
   if (readMoreText.style.display == 'none') {
     readMoreButton.textContent = 'Show Less';
-    readMoreText.style.display = 'block';
+    // readMoreText.style.display = 'block';
+    $('.read-more-text').slideDown();
   } else {
     readMoreButton.textContent = 'Show More';
-    readMoreText.style.display = 'none';
+    // readMoreText.style.display = 'none';
+    $('.read-more-text').slideUp();
     }
 });
 
